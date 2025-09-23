@@ -21,6 +21,20 @@ void Insert(int data)
    }
 
 }
+void peep()
+{
+    if(size==0)
+	{
+		cout<<"Queue is overflow"<<endl;
+	}
+    else
+	{
+		 cout<<"Peeped"<<arr[0]<<endl;
+
+	}
+
+}
+
 void pop()
 {
    if(size==0)
@@ -66,7 +80,8 @@ int main()
 		cout<<"1.Insert"<<endl;
 		cout<<"2.Pop"<<endl;
 		cout<<"3.Display"<<endl;
-		cout<<"4.Exit"<<endl;
+		cout<<"4.Peep"<<endl;
+		cout<<"5.Exit"<<endl;
 		cout<<"Enter your choice"<<endl;
 		cin>>option;
 		switch(option)
@@ -85,6 +100,12 @@ int main()
 				display();
 				break;
 			case 4:
+				cout<<"The elements are: ";
+				peep();
+				break;
+
+
+			case 5:
 				exit(0);
 				break;
 
